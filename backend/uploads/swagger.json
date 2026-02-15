@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Smart Reconciliation API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/auth/login": {
+      "post": { "summary": "Login" }
+    },
+    "/api/dashboard/summary": {
+      "get": {
+        "summary": "Dashboard summary",
+        "security": [{"bearerAuth":[]}],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/api/dashboard/recent": { "get": { "summary": "Recent uploads", "security": [{"bearerAuth":[]}]}},
+    "/api/upload": { "post": { "summary": "Upload file", "security": [{"bearerAuth":[]}]}},
+    "/api/records": { "get": { "summary": "List records", "security": [{"bearerAuth":[]}]}},
+    "/api/records/{id}": { "get": { "summary": "Record detail", "security": [{"bearerAuth":[]}]}},
+    "/api/records/{id}/correct": { "patch": { "summary": "Manual correction (Admin/Analyst)", "security": [{"bearerAuth":[]}]} }
+  }
+  ,
+  "components": {
+    "securitySchemes": { "bearerAuth": { "type": "http", "scheme": "bearer", "bearerFormat": "JWT" } }
+  }
+}

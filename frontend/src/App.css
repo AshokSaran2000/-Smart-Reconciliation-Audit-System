@@ -1,0 +1,58 @@
+#root {
+ width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: left;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container { max-width: 1200px; margin: 0 auto; }
+.app-header .nav { display:flex; align-items:center; gap:12px; }
+.app-brand { font-weight: 700; letter-spacing: 0.6px; }
+.card-ghost { background: transparent; border: 0; }
+
+.badge-pill { border-radius: 999px; padding: .35rem .75rem; }
+.dashboard-card { border-radius: 8px; box-shadow: 0 6px 18px rgba(15,23,42,.06); border: 1px solid rgba(15,23,42,.04); }
+.filters-bar { background: #fff; padding:12px; border-radius:8px; box-shadow: 0 4px 12px rgba(15,23,42,.04); }
+.table-responsive { margin-top:8px; }
+
+.summary-small { color:#6b7280; font-size:13px; }
+.summary-value { font-weight:700; font-size:22px; }
+.card .card-body h6 { margin-bottom: 12px; }
+
+
